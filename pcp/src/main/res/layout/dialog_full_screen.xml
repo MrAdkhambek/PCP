@@ -3,6 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:background="#343638"
     android:orientation="vertical">
 
@@ -20,11 +21,14 @@
         <com.google.android.material.textfield.TextInputLayout
             style="@style/OutlinedBox"
             android:layout_width="0dp"
+            app:hintEnabled="false"
             android:layout_height="match_parent"
             android:layout_weight="1">
 
             <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/edit_text"
+                android:hint="Search"
+                android:textColorHint="#343638"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:textColor="@android:color/white"

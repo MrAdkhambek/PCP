@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    android:padding="12dp"
+    tools:layout_height="52dp"
+    tools:parentTag="android.widget.LinearLayout">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/flag_image"
+        android:layout_width="40dp"
+        android:layout_height="20dp"
+        android:scaleType="fitXY"
+        app:srcCompat="@drawable/flag_uzbekistan" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/country_name"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center_vertical"
+        android:paddingStart="8dp"
+        android:paddingEnd="8dp"
+        android:textColor="@android:color/white"
+        android:textSize="16sp"
+        tools:text="UZ +998" />
+
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/phone_code"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:gravity="center_vertical"
+        android:paddingStart="8dp"
+        android:paddingEnd="8dp"
+        android:textColor="@android:color/white"
+        android:textSize="16sp"
+        tools:text="+998" />
+
+
+</androidx.appcompat.widget.LinearLayoutCompat>

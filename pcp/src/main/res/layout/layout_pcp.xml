@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:padding="8dp"
+    tools:background="@android:color/black"
+    tools:layout_height="48dp"
+    tools:parentTag="android.widget.LinearLayout">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/flag_image"
+        android:layout_width="40dp"
+        android:layout_height="20dp"
+        android:scaleType="fitXY"
+        app:srcCompat="@drawable/flag_uzbekistan" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/phone_code"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:paddingStart="8dp"
+        android:paddingEnd="8dp"
+        android:text="UZ +998"
+        android:textColor="@android:color/white"
+        android:textSize="16sp" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        app:srcCompat="@drawable/ccp_ic_arrow_drop_down" />
+
+
+</merge>

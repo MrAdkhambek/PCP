@@ -18,23 +18,22 @@
         android:paddingEnd="16dp"
         android:paddingBottom="16dp">
 
-        <com.google.android.material.textfield.TextInputLayout
-            style="@style/OutlinedBox"
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/edit_text"
             android:layout_width="0dp"
-            app:hintEnabled="false"
-            android:layout_height="match_parent"
-            android:layout_weight="1">
-
-            <com.google.android.material.textfield.TextInputEditText
-                android:id="@+id/edit_text"
-                android:hint="Search"
-                android:textColorHint="#343638"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:textColor="@android:color/white"
-                android:textSize="18sp" />
-
-        </com.google.android.material.textfield.TextInputLayout>
+            android:layout_height="48dp"
+            android:layout_weight="1"
+            android:background="@drawable/search"
+            android:hint="Search"
+            android:lines="1"
+            android:paddingStart="12dp"
+            android:paddingEnd="12dp"
+            android:singleLine="true"
+            android:textColor="@android:color/white"
+            android:textColorHint="#343638"
+            android:textSize="18sp"
+            app:hintEnabled="false" />
 
         <androidx.appcompat.widget.AppCompatTextView
             android:id="@+id/cancel_button"

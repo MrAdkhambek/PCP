@@ -31,7 +31,7 @@
             android:paddingEnd="12dp"
             android:singleLine="true"
             android:textColor="@android:color/white"
-            android:textColorHint="#343638"
+            android:textColorHint="#292B2C"
             android:textSize="18sp"
             app:hintEnabled="false" />
 

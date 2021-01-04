@@ -1,4 +1,4 @@
-# PCP
+# PCP (Phone code picker)
 
 [![](https://jitpack.io/v/MrAdkhambek/PCP.svg)](https://jitpack.io/#MrAdkhambek/PCP)
 

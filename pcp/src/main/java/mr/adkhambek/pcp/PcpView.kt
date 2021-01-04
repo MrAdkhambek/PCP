@@ -12,6 +12,7 @@ import mr.adkhambek.pcp.dialog.CountryAdapter
 import mr.adkhambek.pcp.dialog.FullScreenDialog
 import mr.adkhambek.pcp.ktx.getFlagMasterResID
 import mr.adkhambek.pcp.model.Country
+import java.util.*
 
 
 class PcpView @JvmOverloads constructor(
@@ -45,7 +46,7 @@ class PcpView @JvmOverloads constructor(
 
     @SuppressLint("DefaultLocale")
     private fun showFullScreenDialog() {
-        FullScreenDialog(SUPPORTED_LANGUAGES[0], context, object : CountryAdapter.Listener {
+        FullScreenDialog(detectLanguage(), context, object : CountryAdapter.Listener {
             override fun onSelectCountry(country: Country) {
                 selectedCountry = country
                 flagImageView.setImageResource(getFlagMasterResID(country))
@@ -54,9 +55,18 @@ class PcpView @JvmOverloads constructor(
         }).show()
     }
 
+    private fun detectLanguage(): String {
+        val locale = Locale.getDefault()
+        return when {
+            locale.language.equals(SUPPORTED_LANGUAGES[0], true) -> SUPPORTED_LANGUAGES[0]
+            locale.language.equals(SUPPORTED_LANGUAGES[1], true) -> SUPPORTED_LANGUAGES[1]
+            else -> SUPPORTED_LANGUAGES[2]
+        }
+    }
+
     companion object {
 
         @JvmField
-        val SUPPORTED_LANGUAGES = arrayOf("uz")
+        val SUPPORTED_LANGUAGES = arrayOf("uz", "ru", "en")
     }
 }

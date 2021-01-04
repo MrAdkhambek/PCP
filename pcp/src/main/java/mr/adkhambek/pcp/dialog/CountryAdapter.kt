@@ -28,6 +28,7 @@ internal class CountryAdapter(
     }
 
     inner class CountryVH(view: View) : RecyclerView.ViewHolder(view) {
+
         private val phoneCode = view.findViewById<TextView>(R.id.phone_code)
         private val flagImage = view.findViewById<ImageView>(R.id.flag_image)
         private val countryName = view.findViewById<TextView>(R.id.country_name)

@@ -18,15 +18,14 @@
         android:paddingEnd="16dp"
         android:paddingBottom="16dp">
 
-
         <androidx.appcompat.widget.AppCompatEditText
             android:id="@+id/edit_text"
             android:layout_width="0dp"
             android:layout_height="48dp"
             android:layout_weight="1"
             android:background="@drawable/search"
-            android:hint="Search"
             android:lines="1"
+            tools:hint="Search ..."
             android:paddingStart="12dp"
             android:paddingEnd="12dp"
             android:singleLine="true"
@@ -43,11 +42,10 @@
             android:gravity="center"
             android:paddingStart="16dp"
             android:paddingEnd="16dp"
-            android:text="Cancel"
+            tools:text="Cancel"
             android:textColor="@android:color/white" />
 
     </androidx.appcompat.widget.LinearLayoutCompat>
-
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/recycler"

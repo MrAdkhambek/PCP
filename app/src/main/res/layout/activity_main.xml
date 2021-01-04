@@ -8,6 +8,7 @@
     tools:context=".MainActivity">
 
     <mr.adkhambek.pcp.PcpView
+        android:id="@+id/pcp_view"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:layout_constraintBottom_toBottomOf="parent"

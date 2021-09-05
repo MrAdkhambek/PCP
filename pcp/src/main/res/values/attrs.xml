@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="PcpTheme">
+        <attr name="pcpTextColor" format="color|reference"/>
+        <attr name="pcpArrowColor" format="color|reference"/>
+    </declare-styleable>
+
+    <declare-styleable name="PcpView">
+        <attr name="hideFlag" format="boolean" />
+        <attr name="hideArrow" format="boolean" />
+        <attr name="hideCountryName" format="boolean" />
+    </declare-styleable>
+
+</resources>

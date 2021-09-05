@@ -8,14 +8,11 @@ import android.widget.TextView
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.google.gson.Gson
-import kotlinx.coroutines.CoroutineScope
-import kotlinx.coroutines.Dispatchers
-import kotlinx.coroutines.cancelChildren
+import kotlinx.coroutines.*
 import kotlinx.coroutines.flow.launchIn
 import kotlinx.coroutines.flow.map
 import kotlinx.coroutines.flow.onEach
 import kotlinx.coroutines.flow.onStart
-import kotlinx.coroutines.suspendCancellableCoroutine
 import mr.adkhambek.pcp.R
 import mr.adkhambek.pcp.ktx.editFlow
 import mr.adkhambek.pcp.model.Country
@@ -79,7 +76,7 @@ internal class FullScreenDialog(
     }
 
     override fun dismiss() {
-        coroutineContext.cancelChildren()
+        coroutineContext.cancel()
         recyclerView?.adapter = null
         countryAdapter = null
         recyclerView = null

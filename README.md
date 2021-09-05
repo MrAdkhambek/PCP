@@ -30,6 +30,7 @@ dependencies {
         app:hideCountryName="true" />
 ```
 
+### You must add this snippets your code
 ```xml
     <!-- Base application theme. -->
     <style name="AppTheme" parent="Theme.MaterialComponents.DayNight.DarkActionBar">

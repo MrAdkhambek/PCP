@@ -22,6 +22,24 @@ dependencies {
     pcpView.value // String
 ```
 
+### Custom atributies
+```xml
+    <mr.adkhambek.pcp.PcpView
+        app:hideArrow="true"
+        app:hideFlag="true"
+        app:hideCountryName="true" />
+```
+
+```xml
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
+
+        <!-- Add this snippets with your custom colors -->
+        <item name="pcpTextColor">@android:color/white</item>
+        <item name="pcpArrowColor">@android:color/white</item>
+    </style>
+```
+
 ![Image](media/1.jpeg)
 
 ![Image](media/2.jpeg)

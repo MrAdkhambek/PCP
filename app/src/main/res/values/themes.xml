@@ -15,7 +15,7 @@
 
 
         <!-- Custom attributes defined in attrs.xml -->
-        <item name="pcpTextColor">@android:color/holo_red_light</item>
-        <item name="pcpArrowColor">@android:color/holo_red_light</item>
+        <item name="pcpTextColor">@android:color/white</item>
+        <item name="pcpArrowColor">@android:color/white</item>
     </style>
 </resources>
